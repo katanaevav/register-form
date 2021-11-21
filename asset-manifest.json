@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/register-form/static/css/main.c9b9d1a4.chunk.css",
+    "main.js": "/register-form/static/js/main.74f09774.chunk.js",
+    "main.js.map": "/register-form/static/js/main.74f09774.chunk.js.map",
+    "runtime-main.js": "/register-form/static/js/runtime-main.abd5e1db.js",
+    "runtime-main.js.map": "/register-form/static/js/runtime-main.abd5e1db.js.map",
+    "static/js/2.e640067a.chunk.js": "/register-form/static/js/2.e640067a.chunk.js",
+    "static/js/2.e640067a.chunk.js.map": "/register-form/static/js/2.e640067a.chunk.js.map",
+    "index.html": "/register-form/index.html",
+    "static/css/main.c9b9d1a4.chunk.css.map": "/register-form/static/css/main.c9b9d1a4.chunk.css.map",
+    "static/js/2.e640067a.chunk.js.LICENSE.txt": "/register-form/static/js/2.e640067a.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/register-form/static/media/drop-down-icon.c7bb16e1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.abd5e1db.js",
+    "static/js/2.e640067a.chunk.js",
+    "static/css/main.c9b9d1a4.chunk.css",
+    "static/js/main.74f09774.chunk.js"
+  ]
+}
