@@ -26,3 +26,5 @@ npm run start
 ## Описание
 
 Создано на основе `Create React App` 
+
+Посмотреть собранный проект можно на Github Pages: [https://katanaevav.github.io/register-form/](https://katanaevav.github.io/register-form/)
