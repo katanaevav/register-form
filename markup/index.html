@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Amigoweb - Регистрация</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./fonts/IBMPlexSans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/IBMPlexSans-Medium.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/IBMPlexSans-Bold.woff" as="font" crossorigin="anonymous">
+  </head>
+  <body>
+
+  <section class="registration">
+    <h1 class="registration__header">Регистрация</h1>
+    <p class="registration__text">Уже есть аккаунт? <a class="registration__link" href="#">Войти</a></p>
+
+    <form class="registration__form form" action="#">
+      <ul class="form__elements">
+        <li class="form__element text-input">
+          <label class="text-input__label" for="field-name">Имя</label>
+          <input class="text-input__input" type="text" id="field-name" name="name" placeholder="Введите Ваше имя">
+          <p class="text-input__error-text text-input__error-text--hide">Введено не корректное значение</p>
+        </li>
+        <li class="form__element text-input">
+          <label class="text-input__label" for="field-email">Email</label>
+          <input class="text-input__input" type="text" id="field-email" name="email" placeholder="Введите ваш email">
+          <p class="text-input__error-text text-input__error-text--hide">Введено не корректное значение</p>
+        </li>
+        <li class="form__element text-input">
+          <label class="text-input__label" for="field-phone">Номер телефона</label>
+          <input class="text-input__input" type="text" id="field-phone" name="phone" placeholder="Введите номер телефона">
+          <p class="text-input__error-text text-input__error-text--hide">Введено не корректное значение</p>
+        </li>
+        <li class="form__element combobox">
+          <label class="combobox__label" for="field-language">Язык</label>
+          <input class="combobox__input" type="hidden" id="field-language" name="language">
+          <a href="#" class="combobox__select combobox__select--not-selected">Язык</a>
+
+          <ul class="combobox__options combobox__options--hide">
+            <li class="combobox__option" value="Русский">Русский</li>
+            <li class="combobox__option" value="Английский">Английский</li>
+            <li class="combobox__option" value="Китайский">Китайский</li>
+            <li class="combobox__option" value="Испанский">Испанский</li>            
+          </ul>
+
+          <p class="combobox__error-text combobox__error-text--hide">Введено не корректное значение</p>
+        </li>
+        <li class="form__element checkbox">
+          <input class="checkbox__input visually-hidden" type="checkbox" id="field-accept-terms" name="accept-terms" value="accept-terms">
+          <label class="checkbox__label" for="field-accept-terms">Принимаю <a class="checkbox__link" href="#">условия</a> использования</label>
+        </li>
+        <li class="form__element submit">
+          <button class="submit__button" type="submit" disabled>Зарегистрироваться</button>
+        </li>
+      </ul>
+
+    </form>
+
+  </section>
+
+  </body>
+</html>

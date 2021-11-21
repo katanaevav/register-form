@@ -1,0 +1,371 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/IBMPlexSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/IBMPlexSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/IBMPlexSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: #7C9CBF;
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-size: 16px;
+  color: #2C2738;
+  line-height: 20px;
+
+  background-color: #E5E5E5;
+
+  height: 100vh;
+  min-width: 360px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0880AE;
+  line-height: 22px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.registration {
+  padding: 40px 30px;
+  margin: 30px;
+
+  background-color: #FFFFFF;
+  box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+  border-radius: 24px;
+
+  width: 460px;
+  /* box-sizing: border-box; */
+}
+
+.registration__header {
+  padding-bottom: 9px;
+
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+}
+
+.registration__text, .registration__link {
+  line-height: 22px;
+}
+
+.registration__form {
+  padding-top: 57px;
+}
+
+.form__element {
+  padding-bottom: 33px;
+}
+
+.form__element:last-child {
+  padding-bottom: 0;
+}
+
+/* ----------- Text input ------------ */
+
+input[type="text"] {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.text-input {
+  font-size: 16px;
+  font-weight: 500;
+  color: #756F86;
+  line-height: 21px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.text-input__label {
+  padding-bottom: 7px;
+}
+
+.text-input__input {
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #DBE2EA;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 6px;
+
+  color: #2C2738;
+}
+
+.text-input__input:focus {
+  padding: 15px;
+
+  outline: none;
+  border: 2px solid #0880AE;
+}
+
+.text-input__error-text {
+  font-size: 14px;
+  color: #FF7171;
+  line-height: 18px;
+
+  position: absolute;
+  bottom: 7px;
+}
+
+.text-input__error-text--hide {
+  display: none;
+}
+
+
+
+
+/* ----------- Checkbox ------------ */
+
+.checkbox {
+  padding-left: 38px;
+}
+
+.checkbox__label {
+  font-weight: 500;
+  color: #756F86;
+  line-height: 21px;
+
+  white-space: normal;
+
+  position: relative;
+}
+
+.checkbox__label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -8px;
+  left: -46px;
+  width: 44px;
+  height: 44px;
+  background: url(../img/checkbox-normal.svg) no-repeat top left;
+  background-size: 44px 44px;
+}
+
+.checkbox__input:checked~.checkbox__label::before {
+  background-image: url(../img/checkbox-checked.svg);
+  background-size: 44px 44px;
+  width: 44px;
+  height: 44px;
+}
+
+/* .checkbox__input:focus~.checkbox__label::before {
+  outline: thin dotted;
+  outline: 2px auto #0880AE;
+} */
+
+
+
+
+/* ----------- Combobox ------------ */
+
+.combobox {
+  font-size: 16px;
+  font-weight: 500;
+  color: #756F86;
+  line-height: 21px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.combobox__label {
+  padding-bottom: 7px;
+}
+
+.combobox__select {
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #DBE2EA;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 6px;
+
+  color: #2C2738;
+
+  cursor: pointer;
+}
+
+.combobox::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  background: url(../img/drop-down-icon.svg) no-repeat top left;
+  background-size: 30px 30px;
+}
+
+.combobox__select:hover,
+.combobox__select:focus {
+  padding: 15px;
+
+  outline: none;
+  border: 2px solid #0880AE;
+}
+
+.combobox__select--not-selected {
+  color: #7c9cbf96;
+}
+
+
+.combobox__options {
+  position: absolute;
+  z-index: 1;
+
+  top: 88px;
+  left: 0;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  background: #FFFFFF;
+  border: 1px solid #DBE2EA;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04), 0px 20px 20px rgba(44, 39, 56, 0.04);
+  border-radius: 6px;
+
+  width: 100%;
+}
+
+.combobox__option {
+  padding: 12px;
+
+  font-size: 16px;
+  line-height: 21px;
+  color: #756F86;
+
+  cursor: pointer;
+}
+
+.combobox__option:hover {
+  background: #EBF4F8;
+}
+
+.combobox__options--hide {
+  display: none;
+}
+
+
+.combobox__error-text {
+  font-size: 14px;
+  color: #FF7171;
+  line-height: 18px;
+
+  position: absolute;
+  bottom: 7px;
+}
+
+.combobox__error-text--hide {
+  display: none;
+}
+
+
+
+
+
+/* ----------- Button ------------ */
+
+.submit__button {
+  padding: 18px;
+
+  font-family: inherit;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #EBF4F8;
+  line-height: 21px;
+
+  background: #0880AE;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+  border-radius: 6px;
+  border: none;
+
+  width: 100%;
+}
+
+.submit__button:hover {
+  box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.08), 0px 24px 48px rgba(44, 39, 56, 0.16);
+}
+
+.submit__button:active {
+  padding: 16px;
+
+  border: 2px solid rgba(44, 39, 56, 0.86);
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001), 0px 4px 8px rgba(44, 39, 56, 0.08);
+}
+
+.submit__button:disabled {
+  color: #B1B5BF;
+
+  background: #DBE2EA;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+}
+
+.submit__button--disabled {
+  color: #B1B5BF;
+
+  background: #DBE2EA;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+}
